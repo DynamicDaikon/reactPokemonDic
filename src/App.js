@@ -5,7 +5,6 @@ import { getAllPokemon, getPokemon } from './utils/pokemon';
 function App() {
   const initialURL = 'https://pokeapi.co/api/v2/pokemon';
   const [loading, setLoading] = useState(true);
-  const [pokemonData, setPokemonData] = useState([]);
 
   useEffect(() => {
     const fetchPokemonData = async () => {
@@ -24,12 +23,9 @@ function App() {
       data.map((pokemon) => {
         // console.log(pokemon);
         let pokemonRecord = getPokemon(pokemon.url);
-
         return pokemonRecord;
       }),
     );
-    setPokemonData(_pokemonData);
-    console.log(_pokemonData);
   };
 
   return (
