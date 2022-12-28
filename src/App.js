@@ -3,6 +3,7 @@ import './App.css';
 function App() {
   const initialURL = 'https://pokeapi.co/api/v2/pokemon';
   const [loading, setLoading] = useState(true);
+  const teisu = 'teisu2';
 
   useEffect(() => {
     const fetchPokemonData = async () => {
