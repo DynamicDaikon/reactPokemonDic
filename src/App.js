@@ -5,7 +5,7 @@ import { getAllPokemon, getPokemon } from './utils/pokemon';
 function App() {
   const initialURL = 'https://pokeapi.co/api/v2/pokemon';
   const [loading, setLoading] = useState(true);
-  const teisu = 'teisu2';
+  const teisu = 'teisu3';
 
   useEffect(() => {
     const fetchPokemonData = async () => {
